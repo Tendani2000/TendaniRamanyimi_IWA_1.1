@@ -1,6 +1,6 @@
 const date ='2050';
 const status = 'student';
-const count = '0';
+const count = '9';
 
 if (date = 2050) {
 	console.log("January", 'New Year’s Day')
@@ -8,7 +8,7 @@ if (date = 2050) {
 	date = 'April'
 	console.log(date, 'Family Day')
 	console.log(date, 'Freedom Day')
-	let count = count + 4
+	count += 4
 
 	if (status = "student") {
 	  console.log('June', 'Youth Day')
@@ -19,7 +19,7 @@ if (date = 2050) {
 	console.log('September', 'Heritage Day')
 	date = 'December'
 	console.log('date', 'Day of Reconciliation')
-	let count = count + 3
+	count += 3
 
 	if (status = "parent") {
 	  console.log(date, 'Christmas Day')
