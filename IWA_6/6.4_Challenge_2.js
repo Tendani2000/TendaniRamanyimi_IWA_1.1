@@ -8,12 +8,14 @@ const minuteOfDay = 00;
 
 // Only change below this line
 
-if (hourOfDay !==null) && (minuteOfDay !== null) && (hourOfDay == '00') && (minuteOfDay == '00') {
-	const taxAsDecimal = salary * tax / '100'
+if (hourOfDay == '00') && (minuteOfDay == '00') {
+	const taxAsDecimal = tax / '100'
   const startingAfterTax = salary * '1' - taxAsDecimal
-	const balance = startingAfterTax - transport - food - rent
+	const balace = starting - transport - food - rent
+}
+
+if (hourOfDay == null) && (minuteOfDay == null) {
+	
 }
 	
 console.log(balance.toFixed(2))
-
-//Where to put the R??
