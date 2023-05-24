@@ -37,3 +37,4 @@ const balance = startingAfterTax - expenses.transport - expenses.food - type
 console.log(balance.toFixed(2))
 
 // expenses(transport) - expenses(food) - expenses(rent.type) 
+//const type = `${size}-${lodging}`
