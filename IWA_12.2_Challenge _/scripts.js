@@ -36,7 +36,7 @@ const checkout1 = book1.querySelectorAll('.checkout');
 const checkin1 = book1.querySelectorAll('.checkin');
 
 
-status1. content.style.color = 'red' ;
+status1.style.color = STATUS_MAP.overdue.color ;
 reserve1.disabled = !STATUS_MAP.overdue.canReserve; 
 checkout1.disabled= !STATUS_MAP.overdue.canCheckout; 
 checkin1.disabled = !STATUS_MAP.overdue.canCheckIn ;
