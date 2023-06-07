@@ -41,6 +41,7 @@ reserve1.disabled = !STATUS_MAP.overdue.canReserve;
 checkout1.disabled= !STATUS_MAP.overdue.canCheckout; 
 checkin1.disabled = !STATUS_MAP.overdue.canCheckIn ;
 
+
 const book2 = document.getElementById('book2');
 const status2 = book2.querySelectorAll('.status');
 const reserve2 = book2.querySelectorAll('.reserve');
@@ -65,4 +66,13 @@ reserve3.disabled = !STATUS_MAP.shelf.canReserve;
 checkout3.disabled= !STATUS_MAP.shelf.canCheckout; 
 checkin3.disabled = !STATUS_MAP.shelf.canCheckIn ;
 
-
+/*
+const books = [
+  {
+      status: document.querySelector('#book1 .status').innerText,
+      html: {
+          status: document.querySelector('#book1 .status'),
+          reserve: document.querySelector('#book1 .reserve'),
+          checkout: document.querySelector('#book1 .checkout'),
+          checkin: document.querySelector('#book1 .checkin'),
+      }*/
