@@ -8,9 +8,9 @@ const data = {
 
 // Only edit below
 
-const { first = [0] } = data.lists.find(([name]) => name === 'first') || {};
-const { second = [1] } = data.lists.find(([name]) => name === 'second') || {};
-const { third = [2] } = data.lists.find(([name]) => name === 'third') || {};
+const first = data.lists[0];
+const second = data.lists.second[1];
+const third = data.lists.third[2];
 
 const result = []
 
@@ -19,14 +19,14 @@ It should remove the value from the current array under lists and move it to the
 
 const extractBiggest = () => {
 	if (first[first.length - 1] > second[second.length - 1]) {
-		return first;
+		return first.pop();
 	}
 
-	if (third[third.length - 1] > second[second.length - 1]) {
-		return third;
+	else if (third[third.length - 1] > second[second.length - 1]) {
+		return third.pop();
 	}
 
-	return second;
+	return second.pop();
 };
 
 // Only edit above
