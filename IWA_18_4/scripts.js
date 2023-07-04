@@ -37,17 +37,28 @@ const handleEditToggle = (event) => {}
 const handleEditSubmit = (event) => {}
 const handleDelete = (event) => {}
 
-html.add.cancel.addEventListener('click', handleAddToggle)
-html.other.add.addEventListener('click', handleAddToggle)
-html.add.form.addEventListener('submit', handleAddSubmit)
+const addCancel = document.querySelector('data-add-overlay')
+addCancel.addEventListener('click', handleAddToggle)
+
+const add = document.querySelector('.button button_primary')
+add.addEventListener('click', handleAddToggle)
+
+const submit = document.querySelector('submit')
+submit.addEventListener('submit', handleAddSubmit)
 
 html.other.grid.addEventListener('click', handleEditToggle)
-html.edit.cancel.addEventListener('click', handleEditToggle)
-html.edit.form.addEventListener('submit', handleEditSubmit)
-html.edit.delete.addEventListener('click', handleDelete)
 
-html.help.cancel.addEventListener('click', handleHelpToggle)
-html.other.help.addEventListener('click', handleHelpToggle)
+const editCancel = document.querySelector('data-edit-cancel')
+editCancel.addEventListener('click', handleEditToggle)
+
+const editForm = document.querySelector('.button button_primary')
+editForm.addEventListener('submit', handleEditSubmit)
+
+const editDelete = document.querySelector('data-edit-delete')
+editDelete.addEventListener('click', handleDelete)
+
+const help = document.querySelector('data-help')
+help.addEventListener('click', handleHelpToggle)
 
 for (const htmlColumn of Object.values(html.columns)) {
     htmlColumn.addEventListener('dragstart', handleDragStart)
